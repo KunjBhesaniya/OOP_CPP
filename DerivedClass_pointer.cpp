@@ -26,18 +26,20 @@ int main()
     //Pointer to Base Class
     BaseClass* base_class_pointer;
     BaseClass obj_base;
-    DerivedClass obj_derived;
 
-    //Points to Derived Class
-    base_class_pointer = &obj_derived;
+    //Points to Base Class
+    base_class_pointer = &obj_base;
 
     base_class_pointer->var_base = 34;
     base_class_pointer->display();
     base_class_pointer->var_base = 3400;
     base_class_pointer->display();
 
+    //Poniter to Derived Class
     DerivedClass* base_class_derived;
+    DerivedClass obj_derived;
 
+    //Points to Derived Class
     base_class_derived = &obj_derived;
 
     base_class_derived->var_base = 1200;
